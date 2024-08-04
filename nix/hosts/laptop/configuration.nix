@@ -2,11 +2,12 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
@@ -14,14 +15,14 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  nix.settings.experimental-features = ["nix-command" "flakes"];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   hardware.opengl.enable = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
   # Set your time zone.
   time.timeZone = "Asia/Tbilisi";
@@ -40,13 +41,13 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-	
+
   services.displayManager.sddm.enable = true; # Enable sddm
   services.displayManager.sddm.wayland.enable = true;
 
   programs.hyprland = {
-    enable = true;  
-    xwayland.enable = true;  
+    enable = true;
+    xwayland.enable = true;
   };
 
   services.displayManager.defaultSession = "hyprland";
@@ -56,13 +57,13 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1"; # This variable fixes electron apps in wayland
 
-  
+
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
 
- 
+
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
@@ -81,16 +82,16 @@
   # services.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-   users.users.etherbits = {
-     isNormalUser = true;
-     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-     packages = with pkgs; [
-       git
-       tree
-       home-manager
-     ];
-     initialPassword = "initial";
-   };
+  users.users.etherbits = {
+    isNormalUser = true;
+    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    packages = with pkgs; [
+      git
+      tree
+      home-manager
+    ];
+    initialPassword = "initial";
+  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
