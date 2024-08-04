@@ -196,6 +196,12 @@
 		};
 	};
 
+	programs.git = {
+		enable = true;
+		userName = "etherbits";
+		userEmail = "nika.qvrivishvili@gmail.com";
+	};
+
 	programs.starship = {
 		enable = true;
 	};
