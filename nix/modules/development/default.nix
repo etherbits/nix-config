@@ -6,5 +6,10 @@
   home.packages = with pkgs; [
     gh
     zellij
+    bun
+    nodejs_20
+    corepack
+    typescript
+    prettierd
   ];
 }

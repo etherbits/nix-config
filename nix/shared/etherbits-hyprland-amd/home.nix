@@ -1,4 +1,4 @@
-{ ... }:
+{ inputs, ... }:
 {
 
   imports = [
@@ -8,6 +8,8 @@
     ../../modules/apps
     ../../modules/media
     ../../modules/utils
+
+    inputs.ags.homeManagerModules.default
   ];
 
   home = {

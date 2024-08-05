@@ -15,5 +15,6 @@
     feh
     unzip
     wl-clipboard-rs
+    killall
   ];
 }
