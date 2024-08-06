@@ -10,11 +10,13 @@
     cliphist
     hyprpicker
     grim
+    grimblast
     swappy
     slurp
     feh
     unzip
     wl-clipboard-rs
     killall
+    libnotify
   ];
 }

@@ -8,5 +8,6 @@
     todoist-electron
     obsidian
     figma-linux
+    webcord
   ];
 }

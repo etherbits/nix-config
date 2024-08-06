@@ -1,0 +1,40 @@
+/* Neutral colors */
+@define-color color-neutral-50  #f3f2f2;
+@define-color color-neutral-100 #e7e4e4;
+@define-color color-neutral-200 #cecaca;
+@define-color color-neutral-300 #b6afaf;
+@define-color color-neutral-400 #9d9595;
+@define-color color-neutral-500 #827878;
+@define-color color-neutral-600 #685f5f;
+@define-color color-neutral-700 #4d4747;
+@define-color color-neutral-800 #332e2e;
+@define-color color-neutral-900 #181616;
+@define-color color-neutral-950 #0d0c0c;
+
+
+ /* Primary colors*/
+
+@define-color color-primary-50 #f3f7ee;
+@define-color color-primary-100 #e4edd9;
+@define-color color-primary-200 #cbddb6;
+@define-color color-primary-300 #b0cb8f;
+@define-color color-primary-400 #98bb6c;
+@define-color color-primary-500 #7fa74d;
+@define-color color-primary-600 #67883f;
+@define-color color-primary-700 #4d652f;
+@define-color color-primary-800 #32421f;
+@define-color color-primary-900 #1a2310;
+@define-color color-primary-950 #0d1108;
+
+/* Accent colors*/
+@define-color color-accent-50 #ffefe5;
+@define-color color-accent-100 #ffe0cc;
+@define-color color-accent-200 #ffc099;
+@define-color color-accent-300 #ffa066;
+@define-color color-accent-400 #ff8133;
+@define-color color-accent-500 #ff6200;
+@define-color color-accent-600 #cc4e00;
+@define-color color-accent-700 #993b00;
+@define-color color-accent-800 #662700;
+@define-color color-accent-900 #331400;
+@define-color color-accent-950 #190a00;
