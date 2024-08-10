@@ -1,99 +1,14 @@
-@import url('variables.css');
+@import url("variables.css");
+@import url("../widgets/bar/style.css");
+@import url("../widgets/calendar/style.css");
+@import url("../widgets/notificationPopups/style.css");
+@import url("../widgets/appLauncher/style.css");
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 window {
-    border-radius: 6px;
-}
-
-window.bar {
-    background-color: alpha(@color-neutral-900, 0.85);
-    color: @theme_fg_color;
-}
-
-button {
-    min-width: 0;
-    background: transparent;
-    border: none;
-}
-
-label {
-    font-weight: bold;
-}
-
-.workspaces button{
-    min-width: 40px;
-    min-height: 40px;
-    border-radius: 0;
-    border: none;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    background: transparent;
-    color: alpha(@color-primary-300, 0.5);
-    transition: all 100ms;
-}
-
-.workspaces button:hover{ 
-    border-bottom: 2px solid @color-primary-700;
-}
-
-.workspaces button.w1{
-    border-radius: 6px 0 0 6px;
-}
-
-
-.workspaces button.focused {
-    border-bottom: 2px solid @color-primary-400;
-    color: @color-primary-300;
-}
-
-.client-title {
-    color: @color-neutral-200;
-    font-weight: 400;
-}
-
-.right{
-    margin: 12px;
-    background: red;
-}
-
-.clock {
-    font-size: 14px;
-    font-weight: 400;
-    margin-right: 16px;
-}
-
-.notification {
-    color: yellow;
-}
-
-.volume .icon{
-    margin-right: 8px;
-}
-
-.volume .slider slider{
-    min-width: 0;
-    min-height: 2px;
-}
-
-.volume .slider contents {
-    min-height: 8px;
-}
-
-.volume .slider trough{
-    background: @color-neutral-950;
-    border: none;
-}
-
-.volume .slider highlight{
-    background: @color-primary-500;
-    border: none;
-}
-
-levelbar block,
-highlight {
-    min-height: 10px;
+  border-radius: 6px;
 }

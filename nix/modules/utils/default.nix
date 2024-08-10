@@ -18,5 +18,6 @@
     wl-clipboard-rs
     killall
     libnotify
+    gvfs
   ];
 }

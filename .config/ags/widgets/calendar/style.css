@@ -1,0 +1,35 @@
+.calendar-content {
+  all: unset;
+  padding: 8px;
+  border-radius: 4px;
+  background: alpha(@color-neutral-900, 0.85);
+  color: @color-neutral-100;
+}
+.calendar-content .header {
+  /* background: red; */
+  background: transparent;
+  border: none;
+}
+
+.calendar-content .button {
+  color: @color-accent-300;
+  background: transparent;
+}
+
+.calendar-content:selected {
+  color: @color-neutral-950;
+  background: @color-primary-500;
+}
+
+.calendar-content .calendar {
+  all: unset;
+}
+
+.calendar-content .highlight {
+  color: alpha(@color-primary-300, 0.85);
+  background: transparent;
+}
+
+.calendar-content:indeterminate {
+  color: @color-neutral-500;
+}

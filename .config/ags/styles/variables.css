@@ -11,8 +11,7 @@
 @define-color color-neutral-900 #181616;
 @define-color color-neutral-950 #0d0c0c;
 
-
- /* Primary colors*/
+/* Primary colors*/
 
 @define-color color-primary-50 #f3f7ee;
 @define-color color-primary-100 #e4edd9;
@@ -38,3 +37,16 @@
 @define-color color-accent-800 #662700;
 @define-color color-accent-900 #331400;
 @define-color color-accent-950 #190a00;
+
+/* Danger colors*/
+@define-color color-danger-50  #fde8e8;
+@define-color color-danger-100 #fbd5d5;
+@define-color color-danger-200 #f6a7a7;
+@define-color color-danger-300 #f17e7e;
+@define-color color-danger-400 #ed5050;
+@define-color color-danger-500 #e82424;
+@define-color color-danger-600 #c21414;
+@define-color color-danger-700 #941010;
+@define-color color-danger-800 #610a0a;
+@define-color color-danger-900 #330505;
+@define-color color-danger-950 #170202;

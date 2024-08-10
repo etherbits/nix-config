@@ -2,9 +2,11 @@
 
 {
   imports = [ ../../shared/etherbits-hyprland-amd/home.nix ];
+
   home.sessionVariables = {
     WALLPAPER = "~/wallpapers/tokyoAlley.png";
   };
+
   wayland.windowManager.hyprland.settings = {
     input = {
       kb_options = "caps:swapescape";

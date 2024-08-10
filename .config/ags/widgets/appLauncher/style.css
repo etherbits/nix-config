@@ -1,0 +1,38 @@
+.app-launcher-box {
+  background: alpha(@color-neutral-900, 0.85);
+  padding: 16px 14px;
+  border-radius: 6px;
+}
+
+.app-search {
+  all: unset;
+  color: @color-neutral-50;
+  background: alpha(@color-neutral-800, 0.5);
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.app-item-button {
+  all: unset;
+  background: alpha(@color-neutral-800, 0.25);
+  margin-top: 16px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.app-item-box image {
+  margin-right: 6px;
+}
+
+.app-item-button label {
+  color: @color-neutral-200;
+}
+
+.app-item-button:focused {
+  background: alpha(@color-neutral-800, 0.5);
+}
+
+.app-item-button:focused label {
+  color: @color-primary-300;
+}

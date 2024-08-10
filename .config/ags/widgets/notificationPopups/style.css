@@ -1,0 +1,71 @@
+window.notification-popups box.notifications {
+  padding: 12px;
+}
+
+window.notification-popups .icon {
+  min-width: 48px;
+  min-height: 48px;
+  margin-right: 20px;
+}
+
+.icon image {
+  font-size: 48px;
+  /* to center the icon */
+  margin: 16px 0;
+  color: @color-primary-300;
+}
+.notification.critical .icon image {
+  color: @color-danger-300;
+}
+
+.icon box {
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 4px;
+}
+
+.notification {
+  min-width: 350px;
+  border-radius: 6px;
+  padding: 20px 20px;
+  margin-bottom: 12px;
+  border: 2px solid alpha(@color-neutral-800, 0.25);
+  background-color: alpha(@color-neutral-900, 0.85);
+  transition: all 10000ms;
+}
+
+.notification.critical {
+  border: 2px solid alpha(@color-danger-400, 0.5);
+}
+
+.title {
+  color: @color-primary-300;
+  font-size: 18px;
+}
+
+.notification.critical .title {
+  color: @color-danger-200;
+}
+
+.body {
+  color: @color-neutral-200;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.actions .action-button {
+  margin: 0 6px;
+  margin-top: 8px;
+  background: alpha(@color-neutral-800, 0.85);
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.actions .action-button:first-child {
+  margin-left: 0;
+}
+
+.actions .action-button:last-child {
+  margin-right: 0;
+}

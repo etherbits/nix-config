@@ -1,0 +1,134 @@
+window.bar {
+    background-color: alpha(@color-neutral-900, 0.85);
+    color: @theme_fg_color;
+}
+
+button {
+    min-width: 0;
+    background: transparent;
+    border: none;
+}
+
+image{
+    color: @color-neutral-300;
+}
+
+
+.workspaces button{
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 0;
+    border: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: alpha(@color-primary-300, 0.5);
+    transition: all 100ms;
+}
+
+.workspaces button:hover{ 
+    border-bottom: 2px solid @color-primary-700;
+}
+
+.workspaces button.w1{
+    border-radius: 6px 0 0 6px;
+}
+
+
+.workspaces button.focused {
+    border-bottom: 2px solid @color-primary-400;
+    color: @color-primary-300;
+}
+
+.client-title {
+    color: @color-neutral-200;
+    font-weight: 400;
+}
+.media label{
+    color: @color-neutral-200;
+    font-weight: 400;
+}
+
+.right{
+    margin: 12px;
+    background: red;
+}
+
+.clock {
+    color: @color-neutral-200;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 16px;
+}
+
+.bar-notification {
+    color: @color-accent-300;
+    font-weight: 400;
+    transition: all 100ms;
+}
+
+.bar-notification.visible {
+    /* opacity: 1;  */
+}
+
+.bar-notification.invisible {
+    opacity: 0; 
+}
+
+.bar-notification image {
+    color: @color-accent-300;
+    margin-right: 8px;
+}
+
+trough, trough block.empty {
+    background: @color-primary-950;
+    border: none;
+}
+
+highlight, trough block.filled{
+    background: @color-primary-500;
+    border: none;
+}
+
+.volume .icon{
+    margin-right: 8px;
+}
+
+.volume .slider *{
+    min-height: 6px;
+}
+
+.volume .slider slider{
+    background: transparent;
+    border:none;
+    min-width: 0px;
+}
+
+.volume .slider trough{
+    border-radius: 2px;
+    min-width: 120px;
+}
+
+.volume .slider highlight{
+    border-radius: 2px;
+}
+
+.battery .icon{
+    margin-right: 8px;
+}
+
+.battery trough{
+    min-width: 120px;
+}
+
+.battery trough *{
+    min-height: 6px;
+    border-radius: 2px;
+    border: none;
+}
+
+
+levelbar block,
+highlight {
+    min-height: 10px;
+}

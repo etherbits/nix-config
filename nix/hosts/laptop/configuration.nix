@@ -13,5 +13,8 @@
     ];
 
   networking.hostName = "nixos-laptop"; # Define your hostname.
+  services.upower = {
+    enable = true;
+  };
 }
 

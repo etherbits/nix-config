@@ -1,9 +1,9 @@
 { pkgs, ... }:
 
 {
-  xdg.configFile.neovim.source = builtins.fetchGit {
+  xdg.configFile.nvim.source = builtins.fetchGit {
     url = "https://github.com/etherbits/nvim";
-    rev = "a7f7fdc125bdd8a43d39386522a2ac42e53a9009";
+    rev = "b98a8a2ed7601f277de6974720c1ff1bca082226";
   };
 
   programs.neovim = {
