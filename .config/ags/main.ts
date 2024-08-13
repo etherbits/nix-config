@@ -2,6 +2,7 @@ import Bar from "./widgets/bar/index";
 import AppLauncher from "./widgets/appLauncher/index";
 import Calendar from "widgets/calendar/index";
 import NotificationPopups from "widgets/notificationPopups/index";
+import PowerMenu from "widgets/powerMenu/index";
 
 const css = `${App.configDir}/styles/style.css`;
 
@@ -20,7 +21,7 @@ styleDirectories.map((dir) =>
 App.applyCss(css);
 
 App.config({
-  windows: [Bar(), AppLauncher, Calendar, NotificationPopups()],
+  windows: [Bar(), AppLauncher, Calendar, NotificationPopups(), PowerMenu],
 });
 
 export {};

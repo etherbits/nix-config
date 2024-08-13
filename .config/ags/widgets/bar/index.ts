@@ -237,7 +237,7 @@ function Right() {
 
 function Bar(monitor = 0) {
   return Widget.Window({
-    name: `bar-${monitor}`, // name has to be unique
+    name: `ags-bar-${monitor}`, // name has to be unique
     margins: [12, 12, 0, 12],
     class_name: "bar",
     monitor,

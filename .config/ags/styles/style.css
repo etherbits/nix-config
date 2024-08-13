@@ -3,6 +3,7 @@
 @import url("../widgets/calendar/style.css");
 @import url("../widgets/notificationPopups/style.css");
 @import url("../widgets/appLauncher/style.css");
+@import url("../widgets/powerMenu/style.css");
 
 * {
   padding: 0;

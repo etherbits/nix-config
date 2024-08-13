@@ -1,7 +1,7 @@
 export const isCalendarOpen = Variable(false);
 
 const Calendar = Widget.Window({
-  title: "calendar",
+  name: "ags-calendar",
   anchor: ["top", "right"],
   layer: "overlay",
   class_name: "calendar",

@@ -104,7 +104,7 @@ export default function NotificationPopups(monitor = 0) {
 
   return Widget.Window({
     monitor,
-    name: `notifications${monitor}`,
+    name: `ags-notifications${monitor}`,
     class_name: "notification-popups",
     anchor: ["top", "right"],
     child: Widget.Box({
