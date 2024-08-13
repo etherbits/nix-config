@@ -2,6 +2,7 @@
   description = "Etherbits NixOs configuration";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-24.05";
@@ -15,9 +16,11 @@
       make = import ./helpers/make.nix { inherit inputs; };
     in
     with make; {
+      inputs.home-manager.users.etherbits.nixpkgs.config.allowUnfree = true;
+
       nixosConfigurations = {
-        desktop = mkSystem ./hosts/desktop/configuration.nix;
-        laptop = mkSystem ./hosts/laptop/configuration.nix;
+        desktop = mkSystem "x86_64-linux" ./hosts/desktop/configuration.nix;
+        laptop = mkSystem "x86_64-linux" ./hosts/laptop/configuration.nix;
       };
 
       homeConfigurations = {
