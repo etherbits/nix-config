@@ -16,10 +16,12 @@
     in
     with make; {
       nixosConfigurations = {
+        desktop = mkSystem ./hosts/desktop/configuration.nix;
         laptop = mkSystem ./hosts/laptop/configuration.nix;
       };
 
       homeConfigurations = {
+        "etherbits@desktop" = mkHome "x86_64-linux" ./hosts/desktop/home.nix;
         "etherbits@laptop" = mkHome "x86_64-linux" ./hosts/laptop/home.nix;
       };
 
