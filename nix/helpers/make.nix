@@ -1,6 +1,5 @@
 { inputs }:
 let
-  # make = (import ./default.nix) { inherit inputs; };
   outputs = inputs.self.outputs;
 in
 {
@@ -11,7 +10,6 @@ in
       };
       modules = [
         config
-        # outputs.nixosModules.default
       ];
     };
 
@@ -23,7 +21,6 @@ in
       };
       modules = [
         config
-        # outputs.homeManagerModules.default
       ];
     };
 }

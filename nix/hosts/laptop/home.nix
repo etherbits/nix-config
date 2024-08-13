@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  imports = [ ../../shared/etherbits-hyprland-amd/home.nix ];
+  imports = [ ../../modules/laptop.nix ];
 
   home.sessionVariables = {
     WALLPAPER = "~/wallpapers/tokyoAlley.png";
