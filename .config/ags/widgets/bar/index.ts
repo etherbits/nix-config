@@ -1,4 +1,4 @@
-import { isCalendarOpen } from "widgets/calendar/index";
+import { isCalendarOpenStates } from "widgets/calendar/index";
 
 const hyprland = await Service.import("hyprland");
 const notifications = await Service.import("notifications");
@@ -45,7 +45,7 @@ function ClientTitle() {
 function Clock() {
   return Widget.Button({
     on_clicked: () => {
-      isCalendarOpen.setValue(!isCalendarOpen.value);
+      Utils.execAsync(`ags -t ags-calendar`);
     },
     child: Widget.Label({
       class_name: "clock",
