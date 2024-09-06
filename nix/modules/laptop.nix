@@ -1,0 +1,8 @@
+{ ... }:
+
+{
+  imports = [
+    ./shared
+    ./laptop/environment
+  ];
+}
