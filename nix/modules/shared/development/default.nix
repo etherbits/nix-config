@@ -27,6 +27,8 @@
     sqls
     bruno
     jq
+    act
+    lazygit
   ])
   ++
   (with pkgs-unstable;
