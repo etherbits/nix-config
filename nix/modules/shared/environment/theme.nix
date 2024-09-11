@@ -6,15 +6,13 @@
       gtk.enable = true;
       package = pkgs.gnome.adwaita-icon-theme;
       name = "Adwaita";
-      size = 16;
+      size = 11;
     };
 
     sessionVariables = {
       WALLPAPER = "~/wallpapers/tokyoAlley.png";
     };
   };
-
-
 
   gtk = {
     enable = true;
