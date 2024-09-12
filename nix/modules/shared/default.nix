@@ -8,6 +8,7 @@
     ./environment
     ./development
     ./media
+    ./gaming
 
     inputs.ags.homeManagerModules.default
   ];

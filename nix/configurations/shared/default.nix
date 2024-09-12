@@ -106,10 +106,14 @@
   # Steam
   programs.steam = {
     enable = true;
+    gamescopeSession.enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
     localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
   };
+
+
+  programs.gamemode.enable = true;
 
   # Setting default browser
   xdg.mime.defaultApplications = {
@@ -120,7 +124,10 @@
   };
 
   # Environment variables
-  environment.sessionVariables.NIXOS_OZONE_WL = "1"; # This variable fixes electron apps in wayland
+  environment.sessionVariables = {
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/etherbits/.steam/root/compatailitytools.d";
+    NIXOS_OZONE_WL = "1"; # This variable fixes electron apps in wayland
+  };
 
 
   # This option defines the first version of NixOS you have installed on this particular machine,
