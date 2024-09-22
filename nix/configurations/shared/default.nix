@@ -22,6 +22,20 @@
   # Networking
   networking.networkmanager.enable = true;
 
+  networking.firewall =
+    {
+      # Syncthing ports
+      allowedTCPPorts = [ 8384 22000 ];
+      allowedUDPPorts = [ 22000 21027 ];
+
+      allowedTCPPortRanges = [
+        { from = 1714; to = 1764; } # KDE Connect
+      ];
+      allowedUDPPortRanges = [
+        { from = 1714; to = 1764; } # KDE Connect
+      ];
+    };
+
   # Set your time zone.
   time.timeZone = "Asia/Tbilisi";
   i18n.defaultLocale = "en_US.UTF-8";

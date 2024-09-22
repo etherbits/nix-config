@@ -29,6 +29,9 @@
     jq
     act
     lazygit
+    (jdk21.override {
+      enableJavaFX = true;
+    })
   ])
   ++
   (with pkgs-unstable;

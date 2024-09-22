@@ -8,6 +8,7 @@
   imports = [
     ../../configurations/desktop.nix
     ./hardware-configuration.nix
+    ../../packages/veikk.nix
   ];
 }
 

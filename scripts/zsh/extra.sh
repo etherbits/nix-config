@@ -7,9 +7,9 @@ alias zj="zellij"
 pc(){
   if [[ $# -eq 1 ]]; then
       selected=$1
-      selected=$(find  ~/projects  ~/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | fzf -q $selected -1)
+      selected=$(find /home/etherbits/ /mnt/store/media -type d -not -path '*/.*'| fzf -q $selected -1)
   else
-      selected=$(find  ~/projects  ~/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | fzf)
+      selected=$(find /home/etherbits/ /mnt/store/media -type d -not -path '*/.*'| fzf)
   fi
 
   if [[ -z $selected ]]; then

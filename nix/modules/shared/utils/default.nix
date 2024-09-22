@@ -13,6 +13,7 @@
     swappy
     slurp
     unzip
+    unrar
     killall
     libnotify
     gvfs

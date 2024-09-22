@@ -9,7 +9,6 @@
       open = false;
       modesetting.enable = true;
       powerManagement.enable = true;
-
     };
     opengl = {
       enable = true;
