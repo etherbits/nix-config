@@ -19,6 +19,7 @@
     krita
     jq
     syncthing
+    reaper
   ])
   ++
   (with pkgs-unstable; [

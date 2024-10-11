@@ -1,0 +1,41 @@
+.power-menu-box {
+  background-color: alpha(@color-neutral-900, 0.85);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.power-menu-box button {
+  background-color: alpha(@color-neutral-800, 0.95);
+  min-width: 128px;
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  outline: none;
+}
+
+.power-menu-box button:last-child {
+  margin-right: 0;
+}
+
+.power-menu-box image {
+  color: @color-neutral-300;
+  margin-bottom: 12px;
+}
+
+.power-menu-box label {
+  color: @color-neutral-200;
+}
+
+.power-menu-box button:hover,
+.power-menu-box button:focus {
+  background-color: alpha(@color-neutral-700, 0.95);
+}
+
+.power-menu-box button:hover image {
+  color: @color-primary-300;
+}
+
+.power-menu-box button:active {
+  background-color: alpha(@color-primary-700, 0.95);
+}
